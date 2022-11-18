@@ -1,0 +1,165 @@
+.profile_header {
+    margin-top: 30px;
+}
+
+.profile_container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.profile_btn {
+    display: inline-block;
+    font: inherit;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+.profile_btn:focus {
+    outline: 0.5rem auto #4d90fe;
+}
+
+.profile {
+    padding: 5rem 0;
+}
+
+.profile:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.profile_image {
+    float: left;
+    width: calc(33, 333% - 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.profile_image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile_user_settings,
+.profile_stats,
+.profile_bio {
+    float: left;
+    width: calc(66.666% - 2rem);
+    color: white;
+}
+
+.profile_user_settings {
+    margin-top: 1.1rem;
+}
+
+.profile_user_name {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.profile_btn {
+    margin-left: 0.5rem;
+}
+
+.profile_stats {
+    margin-top: 1rem;
+}
+
+.profile_stats li {
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-right: 4rem;
+    cursor: pointer;
+}
+
+.profile_bio {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+.follow_btn {
+    display: inline-block;
+    color: white;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #44D7B6, #B620E0);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #161616 inset;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 3px;
+    width: 100px;
+}
+
+button.follow_btn:hover {
+    box-shadow: none;
+    color: white;
+}
+
+
+.profile_real_name,
+.profile_stat_count,
+.profile_edit_btn {
+    font-weight: 600;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem -1rem;
+    padding-bottom: 3rem;
+}
+
+.gallery_item {
+    position: relative;
+    flex: 1 0 22rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.gallery_item:hover .gallery_item_info,
+.gallery_item:focus .gallery_item_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.gallery_item_info {
+    display: none;
+}
+
+.gallery_item_info li {
+    display: inline;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.gallery_item_likes {
+    margin-right: 2.2rem;
+}
+
+.gallery_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}

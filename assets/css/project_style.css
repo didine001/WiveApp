@@ -1,0 +1,26 @@
+.background_gradient {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    border-radius: 50% 22% 40% 80%;
+    filter: blur(100px);
+    background: radial-gradient(circle at 70% 30%, #44D7B6, #B620E0);
+    opacity: 0.2;
+}
+
+.project_container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.project_left_col {
+    flex: 30%;
+}
+
+.project_right_col {
+    flex: 70%;
+}
