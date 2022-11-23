@@ -1,0 +1,270 @@
+.nav_wrapper {
+    width: 90%;
+}
+
+.user_pp {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    background: linear-gradient(to right, #44d7b6, #B620E0) border-box;
+    border-radius: 50em;
+    border: 2px solid transparent;
+    object-fit: cover;
+}
+
+.chatbox_container {
+    width: 100%;
+    max-width: 100%;
+    height: calc(100vh - 40px);
+    display: flex;
+    margin-top: 50px;
+    padding: 0;
+    border: none;
+    position: relative;
+}
+
+.chatbox_left_col {
+    position: relative;
+    flex: 30%;
+}
+
+.chatbox_conv_preview {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+
+}
+
+.chatbox_right_col {
+    position: relative;
+    flex: 70%;
+}
+
+
+.chatbox_user_pp {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.chatbox_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.chatbox_nav_icons {
+    display: flex;
+}
+
+.chatbox_nav_icons li {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    padding-top: 15px;
+    margin-left: 22px;
+}
+
+.chatbox_right_header {
+    background: rgba(22, 22, 22, 0.8);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.chatbox_header_container {
+    padding-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatbox_header_container h4 {
+    font-weight: 400;
+    line-height: 1.2em;
+    margin-left: 15px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.chatbox_header_container h4 span {
+    font: 0.8em;
+    color: #888;
+    cursor: default;
+}
+
+.chatbox_chatbox {
+    margin-top: 60px;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 120px);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.message {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.message p {
+    position: relative;
+    right: 0;
+    text-align: right;
+    margin-bottom: 10px;
+    max-width: 65%;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: -2px 2px 4px 0.1px rgba(0, 0, 0, 20);
+    background: rgba(22, 22, 22, 0.9);
+    font-size: 0.9em;
+}
+
+.message p span {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.85em;
+    opacity: 0.5;
+}
+
+.message img {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: linear-gradient(to right, #44d7b6, #B620E0) border-box;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.mymessage {
+    justify-content: flex-end;
+}
+
+.sndrmessage p {
+    text-align: left;
+    background-color: rgba(22, 22, 22, 0.5);
+    box-shadow: 2px 2px 4px 0.1px rgba(0, 0, 0, 20);
+}
+
+.chatbox_input {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(22, 22, 22, 0.5);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbox_input img {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.chatbox_input input {
+    position: relative;
+    width: 65%;
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 0.8em;
+}
+
+.sharemessage_photo img {
+    position: relative;
+    padding: 0;
+    height: 70px;
+    width: 110px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: linear-gradient(to right, #44d7b6, #B620E0) border-box;
+    border: 2px solid transparent;
+}
+
+.sharemessage p {
+    box-shadow: none;
+}
+
+.sharemessage_container {
+    position: relative;
+    right: 0;
+    margin-left: 60px;
+    text-align: right;
+    background: #161616;
+    max-width: calc(90px + 65%);
+    padding: 0;
+    margin-bottom: 10px;
+    box-shadow: -2px 2px 4px 0.1px rgba(0, 0, 0, 20);
+    border-radius: 15px;
+    display: flex;
+    cursor: pointer;
+}
+
+.sndrmessage .sharemessage_container {
+    text-align: left;
+    box-shadow: 2px 2px 4px 0.1px rgba(0, 0, 0, 20);
+    background-color: rgba(22, 22, 22, 0.5);
+}
+
+.sharemessage_event_info {
+    margin-top: 10px;
+}
+
+.sharemessage h5 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.sharemessage p {
+    background: none;
+    padding-left: 0;
+    font-size: 10px;
+    max-width: 100%;
+    padding-bottom: 0;
+}
+
+.sharemessage_photo span {
+    padding-left: 12px;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.sharemessage_photo p {
+    padding: 0;
+    margin: 0;
+}
+
+.chatbox_gradient {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    transform: translate(-50%, 0%);
+    width: 800px;
+    height: 800px;
+    border-radius: 50% 22% 40% 80%;
+    filter: blur(100px);
+    background: radial-gradient(circle at 70% 30%, #44D7B6, #B620E0);
+    opacity: 0.2;
+}
