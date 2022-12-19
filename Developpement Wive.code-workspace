@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../IPI"
+		},
+		{
+			"path": "../../../../Downloads/blurred-animated-gradients/src"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Developpement Wive"
+	}
+}

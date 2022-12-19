@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pojet Wive</title>
+    <title>Projet Wive</title>
     <link rel="shortcut icon" href="assets/images/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/project_style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <nav class="navbar">
         <div class="nav_wrapper">
-            <img class="logo_wive" src="assets/images/logo.png">
+            <img class="logo_wive" src="assets/images/logo.png" alt="logo_wive">
             <div class="nav_items">
                 <div class="icon user_profil">
                     <i class="fa-solid fa-user"></i>
@@ -23,14 +23,40 @@
             </div>
         </div>
     </nav>
-    <div class="projet_container">
-        <div class="project_left_col">
-            <h1>Voici le projet Wive.</h1>
+    <div class="background_gradient"></div>
+    <section id="project_first_container">
+        <div class="video_container">
+            <div class="video_background"></div>
+            <video controls width="400" autoplay>
+                <source src="assets/images/wive_presentation.mp4" type="video/mp4"> Your browser does not support
+                HTML5
+                video.
+            </video>
         </div>
-        <div class="project_right_col">
+        <iframe style="border-width:0;" id="kisskiss-wive" title="Wive, un réseau social d'événementiel."
+            src="https://www.kisskissbankbank.com/fr/projects/initiative-pascal-josephe/widget_v2"></iframe>
+    </section>
 
+    <section id="project_second_container">
+        <div class="left_col">
+            <iframe
+                src="https://previewer.adalo.com/b1956be7-e04f-411d-86c4-894afcc2359b?_gl=1%2A13ql31b%2A_ga%2AODA0ODA4MjIxLjE2NjU4Njk4ODc.%2A_ga_SWT45DV35L%2AMTY2OTUwMDU0OC4yMC4xLjE2Njk1MDA4MTAuNTcuMC4w&target=6z676mftn7ovt972dvh08lawl&params=%7B%7D"
+                frameborder="0"></iframe>
         </div>
-    </div>
+        <div class="right_col">
+            <h1>Wive, un réseau social d'événementiel.</h1>
+            <p>Wive, c’est un réseau social assez différent. Vous trouverez sur Wive tous les événements qui vous
+                plaisent et vous pourrez y participer directement sur l’appli. <br> <br> Vous pourrez aussi les
+                partager
+                avec
+                vos amis dans des groupes de discussion ou sur votre fil d'actualité. <br> <br>
+                Vous pourrez par exemple suivre votre boite de nuit préférée pour être avertis dès qu’ils publieront
+                un
+                événement, ou même suivre @culturel_lyon pour pouvoir participer aux événements qu’il re-postera sur
+                son
+                profil Wive.</p>
+        </div>
+    </section>
 
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>

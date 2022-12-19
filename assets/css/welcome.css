@@ -1,0 +1,138 @@
+.onboarding_container {
+    display: none;
+}
+
+.onboarding_container.active {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.content {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 4px 0.1px rgba(0, 0, 0, 20);
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.onboarding_dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.onboarding_dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 6px;
+    background: #d8d8d8;
+    cursor: pointer;
+}
+
+.onboarding_dot.active {
+    background-image: linear-gradient(to right, #44D7B6, #B620E0);
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+    position: relative;
+    border-radius: 15px;
+}
+
+.step a {
+    position: absolute;
+    text-decoration: none;
+    left: 50%;
+    color: grey;
+}
+
+.onboarding_header {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.onboarding_header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.onboarding_content {
+    text-align: center;
+    margin: 24px 0;
+}
+
+.onboarding_content img {
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.onboarding_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.onboarding_footer input {
+    width: 80%;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.onboarding_next_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #44D7B6, #B620E0);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.onboarding_next_btn:hover {
+    background: #3f9eca;
+}
+
+.onboarding_second_next_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 40px;
+    background-image: linear-gradient(to right, #44D7B6, #B620E0);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.onboarding_second_next_btn:hover {
+    background: #3f9eca;
+}
+
+.onboarding_second_next_btn i {
+    margin-left: 4px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
