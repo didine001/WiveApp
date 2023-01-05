@@ -8,9 +8,6 @@
     <link rel="shortcut icon" href="assets/images/logo.png">
     <title>Wive, un réseau social d'événementiel.</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
-        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
@@ -180,37 +177,34 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="right_col">
-            <!-- Profil -->
-            <div class="profile_card">
-                <div class="profile_picture">
-                    <img src="assets/images/profile.jpg" alt="Photo de profil">
+            <div class="right_col">
+                <!-- Profil -->
+                <div class="profile_card">
+                    <div class="profile_picture">
+                        <img src="assets/images/profile.jpg" alt="Photo de profil">
+                    </div>
+                    <div>
+                        <p class="username">@Martindvt</p>
+                        <p class="sub_text">Martin Drevet</p>
+                    </div>
+                    <button class="input_btn"><i class="fa-solid fa-right-from-bracket"></i></button>
                 </div>
-                <div>
-                    <p class="username">@Martindvt</p>
-                    <p class="sub_text">Martin Drevet</p>
-                </div>
-                <button class="input_btn"><i class="fa-solid fa-right-from-bracket"></i></button>
-            </div>
 
-            <!-- Suggestions -->
+                <!-- Suggestions -->
 
-            <p class="suggestion_text">Quelques suggestions...</p>
+                <p class="suggestion_text">Quelques suggestions...</p>
 
-            <div class="suggestion_card">
-                <div class="suggestion_picture">
-                    <img src="assets/images/2.jpg" alt="">
+                <div class="suggestion_card">
+                    <div class="suggestion_picture">
+                        <img src="assets/images/2.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="username">@PopPlageAnnecy</p>
+                        <p class="sub_text">Boite de nuit</p>
+                    </div>
+                    <button class="follow_btn">Suivre</button>
                 </div>
-                <div>
-                    <p class="username">@PopPlageAnnecy</p>
-                    <p class="sub_text">Boite de nuit</p>
-                </div>
-                <button class="follow_btn">Suivre</button>
             </div>
-            <div id="map">
-            </div>
-        </div>
         </div>
     </section>
 
@@ -218,7 +212,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/1fe46018aa.js"></script>
     <script src="assets/js/app.js"></script>
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
     <script src="assets/js/home.js"></script>
 
 </body>
