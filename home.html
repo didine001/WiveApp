@@ -8,10 +8,12 @@
     <link rel="shortcut icon" href="assets/images/logo.png">
     <title>Wive, un réseau social d'événementiel.</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
         integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/home.css">
 
 </head>
@@ -107,73 +109,108 @@
                     </div>
                 </div>
                 <!-- Post -->
-                <div class="post">
-                    <div class="info">
-                        <div class="user">
-                            <div class="profile_picture">
-                                <img src="assets/images/ppvieillescharues.jpeg" alt="Photo de profil">
+                <ul id="feed">
+                    <li class="post">
+                        <div class="info">
+                            <div class="user">
+                                <div class="profile_picture">
+                                    <img src="assets/images/ppvieillescharues.jpeg" alt="Photo de profil">
+                                </div>
+                                <p class="username">@LesVieillesCharues</p>
                             </div>
-                            <p class="username">@LesVieillesCharues</p>
+                            <i class="fas fa-ellipsis-h options"></i>
                         </div>
-                        <i class="fas fa-ellipsis-h options"></i>
-                    </div>
-                    <img src="assets/images/1.jpg" class="post_image" alt="Photo de la publication">
-                    <div class="post_content">
-                        <div class="reaction_wrapper">
-                            <i class="icon fas fa-heart"></i>
-                            <i class="icon fas fa-comment"></i>
-                            <i class="icon fa-solid fa-users"></i>
-                            <p class="people_count">348 participants</p>
-                        </div>
-                        <p class="likes">2,574 j'aimes</p>
-                        <p class="post_location">à Carhaix-Plouguer</p>
-                        <p class="description"><span>Les Vieilles Charues</span> Alors ? Est-ce que vous viendrez ?</p>
-                        <div class="btn_wrapper">
-                            <p class="post_time">30/10/2022</p>
-                            <div class="ticket_btn_glow">
-                                <div class="ticket_btn_outline">
-                                    <button class="ticket_btn"><i class="fas fa-solid fa-ticket"></i></button>
+                        <img src="assets/images/1.jpg" class="post_image" alt="Photo de la publication">
+                        <div class="post_content">
+                            <div class="icons_wrap">
+                                <div class="reaction_wrapper">
+                                    <i class="icon fas fa-heart"></i>
+                                    <i class="icon fas fa-comment"></i>
+                                    <i class="icon fa-solid fa-users"></i>
+                                    <p class="people_count">348 participants</p>
+                                </div>
+                                <div class="ticket_btn_glow">
+                                    <div class="ticket_btn_outline">
+                                        <button class="ticket_btn"><i class="fas fa-solid fa-ticket"></i></button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="comment_wrapper">
-                            <img src="assets/images/profile.jpg" alt="photo do profil" class="icon">
-                            <input type="text" class="comment_box" placeholder="Ajouter un commentaire">
-                            <button class="comment_btn">publier</i></button>
-                        </div>
-                    </div>
-                </div>
+                            <p class="likes">2,574 j'aimes</p>
+                            <p class="post_location">à Carhaix-Plouguer</p>
+                            <p class="description"><span>Les Vieilles Charues</span> Alors ? Est-ce que vous viendrez ?
+                            </p>
+                            <p class="post_time">30/10/2022</p>
+                            <div class="comment_wrapper">
+                                <img src="assets/images/profile.jpg" alt="photo do profil" class="icon">
+                                <input type="text" class="comment_box" placeholder="Ajouter un commentaire">
+                                <button class="comment_btn">publier</i></button>
+                            </div>
+                    </li>
+                    <li class="post">
+                        <article>
+                            <div class="info">
+                                <p class="username">@Sarah</p>
+                                <img src="assets/images/profile_pic6.jpeg" alt="profile_picture"
+                                    class="profile_picture">
+                            </div>
+                            <div class="event_info">
+                                <div>
+                                    <p class="location">Paris</p>
+                                    <p class="date">Dans 8 jours</p>
+                                    <ul class="friends_list">
+                                        <li class="friend_card">
+                                            <img src="assets/images/profile_pic10.jpeg" alt="profile_picture">
+                                        </li>
+                                        <li class="friend_card">
+                                            <img src="assets/images/profile_pic9.jpeg" alt="profile_picture">
+                                        </li>
+                                        <li class="friend_card">
+                                            <img src="assets/images/profile_pic8.jpeg" alt="profile_picture">
+                                        </li>
+                                        <li class="friend_card">
+                                            <img src="assets/images/profile_pic11.jpeg" alt="profile_picture">
+                                        </li>
+                                        <p>et 6 personnes y participent</p>
+                                    </ul>
+                                </div>
+                                <i class="fa-regular fa-heart active"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
             </div>
-            <div class="right_col">
-                <!-- Profil -->
-                <div class="profile_card">
-                    <div class="profile_picture">
-                        <img src="assets/images/profile.jpg" alt="Photo de profil">
-                    </div>
-                    <div>
-                        <p class="username">@Martindvt</p>
-                        <p class="sub_text">Martin Drevet</p>
-                    </div>
-                    <button class="input_btn"><i class="fa-solid fa-right-from-bracket"></i></button>
+        </div>
+        <div class="right_col">
+            <!-- Profil -->
+            <div class="profile_card">
+                <div class="profile_picture">
+                    <img src="assets/images/profile.jpg" alt="Photo de profil">
                 </div>
-
-                <!-- Suggestions -->
-
-                <p class="suggestion_text">Quelques suggestions...</p>
-
-                <div class="suggestion_card">
-                    <div class="suggestion_picture">
-                        <img src="assets/images/2.jpg" alt="">
-                    </div>
-                    <div>
-                        <p class="username">@PopPlageAnnecy</p>
-                        <p class="sub_text">Boite de nuit</p>
-                    </div>
-                    <button class="follow_btn">Suivre</button>
+                <div>
+                    <p class="username">@Martindvt</p>
+                    <p class="sub_text">Martin Drevet</p>
                 </div>
-                <div id="map">
-                </div>
+                <button class="input_btn"><i class="fa-solid fa-right-from-bracket"></i></button>
             </div>
+
+            <!-- Suggestions -->
+
+            <p class="suggestion_text">Quelques suggestions...</p>
+
+            <div class="suggestion_card">
+                <div class="suggestion_picture">
+                    <img src="assets/images/2.jpg" alt="">
+                </div>
+                <div>
+                    <p class="username">@PopPlageAnnecy</p>
+                    <p class="sub_text">Boite de nuit</p>
+                </div>
+                <button class="follow_btn">Suivre</button>
+            </div>
+            <div id="map">
+            </div>
+        </div>
         </div>
     </section>
 
