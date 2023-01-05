@@ -2,7 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/swki8708/wive-app.fr/
-    - /bin/cp -R assets/css $DEPLOYPATH
-    - /bin/cp -R assets/images $DEPLOYPATH
     - /bin/cp -R js $DEPLOYPATH
     - /bin/cp *.html $DEPLOYPATH
+    - /bin/cp -R assets/css $DEPLOYPATH
+    - /bin/cp -R assets/images $DEPLOYPATHs
