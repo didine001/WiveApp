@@ -107,6 +107,7 @@
 button.follow_btn:hover {
     box-shadow: none;
     color: white;
+    transition: ease-in 0.3s;
 }
 
 
