@@ -7,4 +7,4 @@ deployment:
     - /bin/cp -R assets/css $DEPLOYPATH
     - /bin/cp -R assets/images $DEPLOYPATH
     - /bin/cp -R assets/js $DEPLOYPATH
-    - /bin/cp -R assets/php $DEPLOYPATHs
+    - /bin/cp -R assets/php $DEPLOYPATH
