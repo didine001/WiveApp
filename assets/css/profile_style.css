@@ -88,7 +88,8 @@
     line-height: 1.5;
     margin-top: 1rem;
 }
-.suivre{
+
+.suivre {
     display: inline-block;
     color: white;
     box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
@@ -102,19 +103,13 @@
     padding: 3px;
     width: 100px;
 }
-<<<<<<< HEAD
 
-button.follow_btn:hover {
-    box-shadow: none;
-    color: white;
-    transition: ease-in 0.3s;
-=======
-.suivre:hover{
+.suivre:hover {
     box-shadow: 0 0 35px var(--clr);
->>>>>>> main
+    transition: ease-in 0.3s;
 }
 
-.message{
+.message {
     display: inline-block;
     margin-left: 18px;
     color: white;
@@ -129,8 +124,10 @@ button.follow_btn:hover {
     padding: 3px;
     width: 100px;
 }
-.message:hover{
+
+.message:hover {
     box-shadow: 0 0 35px var(--clr);
+    transition: ease-in 0.3s;
 }
 
 
