@@ -38,49 +38,38 @@
             <h1>Bienvenue dans la création d'événements Wive.</h1>
         </div>
     </header>
-    <div class="camera_container">
-        <div class="camera">
-            <div class="camera_image">
-                <div class="event_slider_container">
-                    <form action="" class="camera_form">
-                        <div class="event_slider_content">
-                            <div class="form_group">
-                                <p>Pour commencer, nous avons besoin du titre de votre événement.</p>
-                                <input type="text" name="event_title" class="form_control"
-                                    placeholder="Entrez un titre...">
-                            </div>
-                            <div class="form_group">
-                                <p>Ensuite, décrivez votre événement</p>
-                                <input type="text" name="event_description" class="form_control"
-                                    placeholder="Entrez la description...">
-                            </div>
-                            <div class="form_image_placeholder">
-                                <p>Sublimez votre événement avec une photo</p>
-                                <img src="assets/images/image_placeholder.jpeg" alt="image_placeholder">
-                            </div>
-                            <div class="for_group">
-                                <p>Et pour finir, donnez nous la date et le lieu de l'événement.</p>
-                                <input type="date" name="" class="event_form_date">
-                            </div>
-                            <div class="form_group">
-                                <input type="text" name="event_location" class="form_control"
-                                    placeholder="Entrez la localisation...">
-                            </div>
-                        </div>
-                        <div class="event_slider_footer">
-                            <div class="event_dots">
-                                <div class="event_dot"></div>
-                                <div class="event_dot"></div>
-                                <div class="event_dot"></div>
-                                <div class="event_dot"></div>
-                            </div>
-                            <button class="event_next_btn"><i class="fa-solid fa-arrow-right"></i></button>
-                        </div>
-                    </form>
-                </div>
+    <form action="" class="event_form">
+        <div class="event_slider_content">
+            <div class="form_group active">
+                <p>Pour commencer, nous avons besoin du titre de votre événement.</p>
+                <input type="text" name="event_title" class="form_control" placeholder="Entrez un titre...">
+            </div>
+            <div class="form_group">
+                <p>Ensuite, décrivez votre événement</p>
+                <input type="text" name="event_description" class="form_control" placeholder="Entrez la description...">
+            </div>
+            <div class="form_group">
+                <p>Sublimez votre événement avec une photo</p>
+                <img src="assets/images/image_placeholder.jpeg" alt="image_placeholder">
+            </div>
+            <div class="form_group">
+                <p>Et pour finir, donnez nous la date et le lieu de l'événement.</p>
+                <input type="date" name="event_date" class="event_form_date">
+            </div>
+            <div class="form_group">
+                <input type="text" name="event_location" class="form_control" placeholder="Entrez la localisation...">
             </div>
         </div>
-    </div>
+        <div class="event_slider_footer">
+            <div class="event_dots">
+                <div class="event_dot active"></div>
+                <div class="event_dot"></div>
+                <div class="event_dot"></div>
+                <div class="event_dot"></div>
+            </div>
+            <button class="event_next_btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </form>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
