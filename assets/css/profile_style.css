@@ -106,7 +106,7 @@
 
 .suivre:hover {
     box-shadow: 0 0 35px var(--clr);
-    transition: ease-in 0.3s;
+    transition: ease-out 0.3s;
 }
 
 .message {
@@ -127,7 +127,7 @@
 
 .message:hover {
     box-shadow: 0 0 35px var(--clr);
-    transition: ease-in 0.3s;
+    transition: ease-out 0.3s;
 }
 
 
