@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/verif_pro.css">
+    <title>Wive | Création de profil professionnel</title>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav_wrapper">
+            <a href="home.html"><img class="logo_wive" src="assets/images/logo.png"></a>
+            <form class="search_form ">
+                <input type="text" class="search_box" placeholder="Rechercher...">
+            </form>
+            <div class="nav_items">
+                <a href="chatbox.html" class="icon fa-solid fa-message"></a>
+                <i class="icon fa-solid fa-calendar"></i>
+                <div class="icon user_profil">
+                    <a href="profile.html"><img src="assets/images/profile.jpg" alt="logedin_user_pp"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <img src="assets/images/logo.png" alt="logo_wive" class="logo">
+    <form action="" class="siret_form">
+        <div class="form_group">
+            <h1 style="text-align: center;">Bienvenue dans la création de profil professionnel Wive.</h1>
+            <p>Vous êtes professionnel ?</p>
+            <p class="text_gradient">Lancez vous !</p>
+            <p style="font-size: 16px;">Publiez vos événements sur Wive et profitez d'un moyen simple et efficace
+                pour mettre en avant
+                vos
+                événements.</p>
+            <div class="form_inputs">
+                <input type="placeholder" name="SIRET" class="form_control" placeholder="Entrez votre SIRET...">
+                <button class="next_btn"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </form>
+    <section class="siret_infos active">
+        <h2>Vérifiez les informations :</h2>
+        <form action="" class="form_infos">
+            <input type="placeholder" name="company_cat" class="form_control" placeholder="Catégorie de votre société">
+            <input type="placeholder" name="company_location" class="form_control"
+                placeholder="Adresse de votre société">
+            <input type="placeholder" name="company_city" class="form_control" placeholder="Ville ou code postal">
+            <input type="placeholder" name="company_phone_number" class="form_control"
+                placeholder="Numéro de téléphone">
+            <button class="siret_confirm">CONFIRMER</button>
+        </form>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/1fe46018aa.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

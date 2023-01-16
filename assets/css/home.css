@@ -9,7 +9,7 @@
 .wrapper {
     width: 70%;
     max-width: 1000px;
-    display:block;
+    display: block;
     grid-template-columns: 60% 40%;
     grid-gap: 30px;
 }
@@ -147,6 +147,7 @@
     height: 500px;
     object-fit: cover;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .fas {
@@ -213,14 +214,11 @@
     font-size: 12px;
 }
 
-.btn_wrapper {
-    display: flex;
-}
-
-.ticket_btn:hover{
+.ticket_btn:hover {
     background: var(--clr);
     box-shadow: 0 0 35px var(--clr);
 }
+
 .ticket_btn_outline {
     background: linear-gradient(to right, #44D7B6, #B620E0);
     border: none;

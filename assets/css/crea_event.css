@@ -80,18 +80,9 @@
     opacity: 100%;
 }
 
-.event_next_btn {
+.next_btn {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 30px;
-    background-image: linear-gradient(-115deg, #44D7B6, #B620E0);
-    border: none;
-    padding: 3px 6px 3px 6px;
-    border-radius: 50%;
-}
-
-.event_next_btn img {
-    height: 40px;
-    width: 40px;
 }

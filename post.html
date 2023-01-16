@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/logo.png">
+    <title>Wive, un réseau social d'événementiel.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/post.css">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav_wrapper">
+            <a href="home.html"><img class="logo_wive" src="assets/images/logo.png"></a>
+            <form class="search_form ">
+                <input type="text" class="search_box" placeholder="Rechercher...">
+            </form>
+            <div class="nav_items">
+                <i class="icon fa-solid fa-map"></i>
+                <a href="chatbox.html" class="icon fa-solid fa-message"></a>
+                <i class="icon fa-solid fa-calendar"></i>
+                <div class="icon user_profil">
+                    <a href="profile.html"><img src="assets/images/profile.jpg" alt="logedin_user_pp"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <li class="post">
+            <div class="info">
+                <div class="user">
+                    <div class="profile_picture">
+                        <img src="assets/images/ppvieillescharues.jpeg" alt="Photo de profil">
+                    </div>
+                    <a href="user_profile.html">
+                        <p class="username">@LesVieillesCharues</p>
+                    </a>
+                </div>
+                <i class="fas fa-ellipsis-h options"></i>
+            </div>
+            <img src="assets/images/1.jpg" class="post_image" alt="Photo de la publication">
+            <div class="post_content">
+                <div class="icons_wrap">
+                    <div class="reaction_wrapper">
+                        <i class="icon fas fa-heart"></i>
+                        <i class="icon fas fa-comment"></i>
+                        <i class="icon fa-solid fa-users"></i>
+                        <p class="people_count">348 participants</p>
+                    </div>
+                    <div class="ticket_btn_glow">
+                        <div class="ticket_btn_outline">
+                            <button class="ticket_btn"><i class="fas fa-solid fa-ticket"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <p class="likes">2,574 j'aimes</p>
+                <p class="post_location">à Carhaix-Plouguer</p>
+                <p class="description"><span>Les Vieilles Charues</span> Alors ? Est-ce que vous viendrez ?
+                </p>
+                <p class="post_time">30/10/2022</p>
+                <div class="comment_wrapper">
+                    <img src="assets/images/profile.jpg" alt="photo do profil" class="icon">
+                    <input type="text" class="comment_box" placeholder="Ajouter un commentaire">
+                    <button class="comment_btn">publier</i></button>
+                </div>
+        </li>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/1fe46018aa.js"></script>
+</body>
