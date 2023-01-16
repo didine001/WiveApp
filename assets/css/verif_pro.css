@@ -1,7 +1,7 @@
 .logo {
     position: absolute;
     z-index: -1;
-    top: 80px;
+    top: 90px;
     left: -140px;
     width: 500px;
 }
@@ -10,6 +10,15 @@
     display: block;
     margin: 60px;
     text-align: left;
+}
+
+.form_group h1 {
+    font-weight: 700;
+}
+
+.form_group h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .form_group p {
@@ -73,12 +82,12 @@
 
 @media (max-width: 1020px) {
     .logo {
-        top: 90px;
+        top: 100px;
     }
 }
 
 @media (max-width: 890px) {
     .logo {
-        top: 120px;
+        top: 130px;
     }
 }
