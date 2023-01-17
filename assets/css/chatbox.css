@@ -356,15 +356,9 @@
     margin: 0;
 }
 
-.chatbox_gradient {
+.gradient {
     position: fixed;
     top: 0;
     left: 100%;
     transform: translate(-50%, 0%);
-    width: 800px;
-    height: 800px;
-    border-radius: 50% 22% 40% 80%;
-    filter: blur(100px);
-    background: radial-gradient(circle at 70% 30%, #44D7B6, #B620E0);
-    opacity: 0.2;
 }

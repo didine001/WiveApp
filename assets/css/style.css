@@ -19,7 +19,7 @@
 }
 
 * input {
-    background: none;
+    background: #161616;
     border: none;
     border-radius: 15px;
     box-shadow: 2px 2px 4px 0.1px rgba(0, 0, 0, 20);
@@ -154,47 +154,15 @@ button {
     text-align: center;
 }
 
-/* Gallery */
+/** Common items **/
 
-@media screen and (max-width: 800px) {
-
-    .profile:after {
-        display: none;
-    }
-
-    .profile_btn {
-        display: none;
-    }
-
-    .profil_user_settings,
-    .profile_stats,
-    .profile_bio,
-    .profile_user_name {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .profile_image,
-    .profile_user_settings,
-    .profile_bio,
-    .profile_stats {
-        float: none;
-        width: auto;
-        margin: 5px auto;
-    }
-
-    .profile_stats li {
-        display: block;
-    }
-
-    .profile_image {
-        margin: 0 auto;
-    }
-
-    .profile_user_name {
-        font-size: 20px;
-    }
+.gradient {
+    width: 800px;
+    height: 800px;
+    border-radius: 50% 22% 40% 80%;
+    filter: blur(100px);
+    background: radial-gradient(circle at 70% 30%, #44D7B6, #B620E0);
+    opacity: 0.2;
 }
 
 .next_btn {

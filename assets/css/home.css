@@ -455,3 +455,46 @@ article p {
         border: 0;
     }
 }
+
+/* Gallery */
+
+@media screen and (max-width: 800px) {
+
+    .profile:after {
+        display: none;
+    }
+
+    .profile_btn {
+        display: none;
+    }
+
+    .profil_user_settings,
+    .profile_stats,
+    .profile_bio,
+    .profile_user_name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile_image,
+    .profile_user_settings,
+    .profile_bio,
+    .profile_stats {
+        float: none;
+        width: auto;
+        margin: 5px auto;
+    }
+
+    .profile_stats li {
+        display: block;
+    }
+
+    .profile_image {
+        margin: 0 auto;
+    }
+
+    .profile_user_name {
+        font-size: 20px;
+    }
+}
