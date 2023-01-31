@@ -120,38 +120,40 @@
                         </div>
                         <a href="post.html"><img src="assets/images/1.jpg" class="post_image"
                                 alt="Photo de la publication"></a>
-                        <div class="post_content">
-                            <div class="icons_wrap">
-                                <div class="reaction_wrapper">
-                                    <button class="like-button">
-                                        <i onclick="Toggle()" id="btn" class="icon far fa-heart"></i>
-                                    </button>
-                                    <script>
-                                      var btn = document.getElementById('btn');
-                                        function Toggle(){
-                                            if(btn.classList.contains("far")){
-                                                btn.classList.remove("far");
-                                                btn.classList.add("fas")
-
-                                            }
-                                            else{
-                                                btn.classList.remove("fas");
-                                                btn.classList.add("far")
-                                            }
-                                        }
-                                    
-                                    </script>
-                                    <i class="icon fas fa-comment"></i>
-                                    <i class="icon fa-solid fa-users"></i>
-                                    <p class="people_count">348 participants</p>
-                                </div>
-                                <div class="ticket_btn_glow">
-                                    <div class="ticket_btn_outline">
-                                        <button class="ticket_btn"><i class="fas fa-solid fa-ticket"></i></button>
+                                <div class="post_content">
+                                    <div class="icons_wrap">
+                                      <div class="reaction_wrapper">
+                                        <button class="like-button">
+                                          <i onclick="toggleLike()" id="like-button" class="icon far fa-heart"></i>
+                                        </button>
+                                        <i class="icon fas fa-comment"></i>
+                                        <i class="icon fa-solid fa-users"></i>
+                                        <p class="people_count">348 participants</p>
+                                      </div>
+                                      <div class="ticket_btn_glow">
+                                        <div class="ticket_btn_outline">
+                                          <button class="ticket_btn">
+                                            <i class="fas fa-solid fa-ticket"></i>
+                                          </button>
+                                        </div>
+                                      </div>
                                     </div>
-                                </div>
-                            </div>
-                            <p class="likes">2,574 j'aimes</p>
+                                    <p class="like-count">1574 j'aimes</p>
+                                  </div>
+                                  <script>
+                                  const likeButton = document.getElementById("like-button");
+                                  const likeCount = document.querySelector(".like-count");
+                                  
+                                  likeButton.addEventListener("click", function() { // quand on clique sur le bouton le fonction s'éxecute
+                                    if (likeButton.classList.contains("fas")) { // on vérifie que le bouton à la classe fas (si c'est déjà liké), 
+                                      likeCount.innerText = parseInt(likeCount.innerText.replace(" j'aimes")) - 1 + " j'aimes";//si c'est déjà liké on enlève le j'aime, parseInt pour convertir la chaine de caractère en nombre
+                                    } else {
+                                      likeCount.innerText = parseInt(likeCount.innerText.replace(" j'aimes")) + 1 + " j'aimes";// sinon on rajoute le j'aime le replace permet de modifier la valeur de j'aime 
+                                    }
+                                    likeButton.classList.toggle("fas");
+                                    likeButton.classList.toggle("far");
+                                  });
+                                  </script>                                  
                             <p class="post_location">à Carhaix-Plouguer</p>
                             <p class="description"><span>Les Vieilles Charues</span> Alors ? Est-ce que vous viendrez ?
                             </p>
