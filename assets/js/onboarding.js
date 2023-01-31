@@ -49,3 +49,15 @@ skipLink.addEventListener('click', () => {
     steps[activeIndex + 1].classList.add('active');
     onboardingDots[activeIndex + 1].classList.add('active');
 });
+// on va proposer à l'utilisateur d'accéder à sa position on va convertir la longitude/lattitude en nom de lieu
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+        let lat = position.coords.latitude;
+        let lng = position.coords.longitude;
+
+        document.querySelector("input[type='location']").value = lat + ", " + lng;
+    });
+} else {
+    // Geolocation is not supported by the browser
+    console.error("Geolocation is not supported by this browser.");
+}
