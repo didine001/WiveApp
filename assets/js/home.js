@@ -22,3 +22,7 @@ window.addEventListener('scroll', function () {
     // Update map center
     map.setView(center);
 });
+
+
+
+

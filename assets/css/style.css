@@ -33,12 +33,10 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-button {
-    background-image: linear-gradient(-115deg, #44D7B6, #B620E0);
+.like-button {
     border: none;
-    padding: 5px;
-    border-radius: 15px;
-}
+    background-color: transparent;
+  }
 
 *:focus {
     outline: none;

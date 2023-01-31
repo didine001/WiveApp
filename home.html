@@ -123,7 +123,24 @@
                         <div class="post_content">
                             <div class="icons_wrap">
                                 <div class="reaction_wrapper">
-                                    <i class="icon fas fa-heart"></i>
+                                    <button class="like-button">
+                                        <i onclick="Toggle()" id="btn" class="icon far fa-heart"></i>
+                                    </button>
+                                    <script>
+                                      var btn = document.getElementById('btn');
+                                        function Toggle(){
+                                            if(btn.classList.contains("far")){
+                                                btn.classList.remove("far");
+                                                btn.classList.add("fas")
+
+                                            }
+                                            else{
+                                                btn.classList.remove("fas");
+                                                btn.classList.add("far")
+                                            }
+                                        }
+                                    
+                                    </script>
                                     <i class="icon fas fa-comment"></i>
                                     <i class="icon fa-solid fa-users"></i>
                                     <p class="people_count">348 participants</p>
